@@ -50,6 +50,9 @@
     "prettier": "^2.7.1",
     "typescript": "^4.7.3"
   },
+  "peerDependencies": {
+    "@japa/runner": "^2.0.9"
+  },
   "dependencies": {
     "expect-type": "^0.14.2"
   },
