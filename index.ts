@@ -12,12 +12,12 @@ import { expectTypeOf as expectType } from 'expect-type'
 
 export function expectTypeOf(): PluginFn {
   return function (_, __, { TestContext }) {
-    TestContext.getter('expectType', () => expectType, true)
+    TestContext.macro('expectTypeOf', expectType)
   }
 }
 
 declare module '@japa/runner' {
   interface TestContext {
-    expectType: typeof expectType
+    expectTypeOf: typeof expectType
   }
 }
