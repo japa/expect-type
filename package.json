@@ -96,5 +96,17 @@
     "tag": "latest",
     "branch": "main",
     "anyBranch": false
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japa/expect-type.git"
+  },
+  "bugs": {
+    "url": "https://github.com/japa/expect-type/issues"
+  },
+  "homepage": "https://github.com/japa/expect-type#readme"
 }
