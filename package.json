@@ -1,0 +1,97 @@
+{
+  "name": "@japa/expect-type",
+  "version": "0.0.0",
+  "description": "Write assertions for TypeScript types",
+  "files": [
+    "src",
+    "index.js"
+  ],
+  "exports": {
+    ".": "./index.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "node --require=@adonisjs/require-ts/build/register bin/test.ts",
+    "clean": "del-cli build",
+    "compile": "npm run lint && npm run clean && tsc",
+    "build": "npm run compile",
+    "release": "np --message=\"chore(release): %s\"",
+    "version": "npm run build",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint . --ext=.ts",
+    "format": "prettier --write .",
+    "sync-labels": "github-label-sync --labels .github/labels.json japa/expect-type"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "keywords": [],
+  "author": "virk,japa",
+  "license": "MIT",
+  "devDependencies": {
+    "@adonisjs/require-ts": "^2.0.12",
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@japa/assert": "^1.3.4",
+    "@japa/run-failed-tests": "^1.0.7",
+    "@japa/runner": "^2.0.9",
+    "@japa/spec-reporter": "^1.1.12",
+    "@types/node": "^18.0.0",
+    "del-cli": "^4.0.1",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-adonis": "^3.0.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "github-label-sync": "^2.2.0",
+    "husky": "^8.0.1",
+    "np": "^7.6.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "expect-type": "^0.14.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:adonis/typescriptPackage",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto"
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "build"
+  ],
+  "prettier": {
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true,
+    "useTabs": false,
+    "quoteProps": "consistent",
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "printWidth": 100
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "np": {
+    "message": "chore(release): %s",
+    "tag": "latest",
+    "branch": "main",
+    "anyBranch": false
+  }
+}
