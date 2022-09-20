@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "Write assertions for TypeScript types",
   "files": [
-    "src",
-    "index.js"
+    "build/index.js",
+    "build/index.d.ts"
   ],
   "exports": {
-    ".": "./index.js"
+    ".": "./build/index.js"
   },
   "type": "commonjs",
   "scripts": {
