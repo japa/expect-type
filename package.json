@@ -2,6 +2,7 @@
   "name": "@japa/expect-type",
   "version": "1.0.1",
   "description": "Write assertions for TypeScript types",
+  "main": "./build/index.js",
   "files": [
     "build/index.js",
     "build/index.d.ts"
@@ -97,7 +98,6 @@
     "branch": "main",
     "anyBranch": false
   },
-  "main": "index.js",
   "directories": {
     "test": "tests"
   },
