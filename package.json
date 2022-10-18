@@ -1,6 +1,6 @@
 {
   "name": "@japa/expect-type",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Write assertions for TypeScript types",
   "main": "./build/index.js",
   "files": [
