@@ -38,7 +38,7 @@ test('test title', ({ expectTypeOf }) => {
 })
 ```
 
-[gh-workflow-image]: https://img.shields.io/github/workflow/status/japa/expect-type/test?style=for-the-badge
+[gh-workflow-image]: https://img.shields.io/github/actions/workflow/status/japa/expect-type/test.yml?style=for-the-badge
 [gh-workflow-url]: https://github.com/japa/expect-type/actions/workflows/test.yml "Github action"
 
 [npm-image]: https://img.shields.io/npm/v/@japa/expect-type/latest.svg?style=for-the-badge&logo=npm
