@@ -1,7 +1,7 @@
 # @japa/expect-type
 > Write assertions for TypeScript types
 
-[![gh-workflow-image]][gh-workflow-url] [![npm-image]][npm-url] ![][typescript-image] [![license-image]][license-url] [![snyk-image]][snyk-url]
+[![gh-workflow-image]][gh-workflow-url] [![npm-image]][npm-url] ![][typescript-image] [![license-image]][license-url]
 
 The `expect-type` plugin of Japa helps you write assertions against the TypeScript types. There is no runtime behavior with the `expect-type` plugin and you need to compile your code to view the assertion errors.
 
@@ -38,8 +38,8 @@ test('test title', ({ expectTypeOf }) => {
 })
 ```
 
-[gh-workflow-image]: https://img.shields.io/github/actions/workflow/status/japa/expect-type/test.yml?style=for-the-badge
-[gh-workflow-url]: https://github.com/japa/expect-type/actions/workflows/test.yml "Github action"
+[gh-workflow-image]: https://img.shields.io/github/actions/workflow/status/japa/expect-type/checks.yml?style=for-the-badge
+[gh-workflow-url]: https://github.com/japa/expect-type/actions/workflows/checks.yml "Github action"
 
 [npm-image]: https://img.shields.io/npm/v/@japa/expect-type/latest.svg?style=for-the-badge&logo=npm
 [npm-url]: https://www.npmjs.com/package/@japa/expect-type/v/latest "npm"
@@ -48,6 +48,3 @@ test('test title', ({ expectTypeOf }) => {
 
 [license-url]: LICENSE.md
 [license-image]: https://img.shields.io/github/license/japa/expect-type?style=for-the-badge
-
-[snyk-image]: https://img.shields.io/snyk/vulnerabilities/github/japa/expect-type?label=Snyk%20Vulnerabilities&style=for-the-badge
-[snyk-url]: https://snyk.io/test/github/japa/expect-type?targetFile=package.json "snyk"
