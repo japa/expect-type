@@ -7,9 +7,9 @@
  * file that was distributed with this source code.
  */
 
-import { expectTypeOf as expectType } from 'expect-type'
-import type { PluginFn } from '@japa/runner/types'
 import { TestContext } from '@japa/runner/core'
+import type { PluginFn } from '@japa/runner/types'
+import { expectTypeOf as expectType } from 'expect-type'
 
 export function expectTypeOf(): PluginFn {
   return function () {
